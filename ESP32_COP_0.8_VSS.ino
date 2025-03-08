@@ -8,8 +8,8 @@ const uint8_t CYP = 35;
 const uint8_t TDC = 34;
 
 // Global variable for cylinder state
-const uint8_t Op = LOW;
-const uint8_t Cl = HIGH;
+const uint8_t Op = LOW; //Open gate state, depending on the transistors used in Q1,Q2,Q3,Q4 Default is PNP
+const uint8_t Cl = HIGH; //Closed gate state, depending on the transistors used in Q1,Q2,Q3,Q4 Default is PNP
 volatile int CYL = 0; // Use volatile for shared variables in ISRs
 
 // Function prototypes (declare before setup)
